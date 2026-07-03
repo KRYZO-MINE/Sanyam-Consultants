@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanyam Consultants - Tally Certified Partner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-card:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-building text-3xl text-purple-600"></i>
+                    <a href="#home" class="cursor-pointer">
+                        <div>
+                            <h1 class="text-xl font-bold text-gray-800 hover:text-purple-600">Sanyam Consultants</h1>
+                            <p class="text-xs text-purple-600 font-semibold">Tally Certified Partner (3-Star)</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-purple-600 font-medium">About</a>
+                    <a href="#services" class="text-gray-700 hover:text-purple-600 font-medium">Services</a>
+                    <a href="#products" class="text-gray-700 hover:text-purple-600 font-medium">Products</a>
+                    <a href="#contact" class="text-gray-700 hover:text-purple-600 font-medium">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 border-t pt-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="#about" class="text-gray-700 hover:text-purple-600 font-medium">About</a>
+                    <a href="#services" class="text-gray-700 hover:text-purple-600 font-medium">Services</a>
+                    <a href="#products" class="text-gray-700 hover:text-purple-600 font-medium">Products</a>
+                    <a href="#contact" class="text-gray-700 hover:text-purple-600 font-medium">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">Your Trusted Tally Partner</h2>
+                    <p class="text-xl mb-8 opacity-90">Complete business solutions with Tally. Serving since 1998.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="bg-white text-purple-700 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Get in Touch</a>
+                        <a href="#services" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-purple-700 transition">Our Services</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="bg-white/20 backdrop-blur-lg rounded-2xl p-8">
+                        <div class="grid grid-cols-2 gap-6 text-center">
+                            <div>
+                                <p class="text-4xl font-bold">4.8</p>
+                                <p class="text-sm">Google Rating</p>
+                            </div>
+                            <div>
+                                <p class="text-4xl font-bold">147+</p>
+                                <p class="text-sm">Reviews</p>
+                            </div>
+                            <div>
+                                <p class="text-4xl font-bold">26+</p>
+                                <p class="text-sm">Years Experience</p>
+                            </div>
+                            <div>
+                                <p class="text-4xl font-bold">3-Star</p>
+                                <p class="text-sm">Tally Partner</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">About Sanyam Consultants</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Your trusted partner for complete business management solutions</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Our Journey</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-600 mt-1 mr-3"></i>
+                            <span><strong>1998:</strong> Started as computer hardware & service provider</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-600 mt-1 mr-3"></i>
+                            <span><strong>2004:</strong> Associated with Tally</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-600 mt-1 mr-3"></i>
+                            <span><strong>2007:</strong> Business operations as Sanyam Consultants</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-purple-600 mt-1 mr-3"></i>
+                            <span><strong>Now:</strong> Official 3-Star Certified Tally Partner</span>
+                        </li>
+                    </ul>
+                    <div class="mt-8">
+                        <h4 class="font-semibold text-gray-800 mb-4">Business Highlights</h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-purple-50 p-4 rounded-lg">
+                                <i class="fas fa-award text-purple-600 text-2xl mb-2"></i>
+                                <p class="text-sm font-medium">Pre & Post Sales Support</p>
+                            </div>
+                            <div class="bg-purple-50 p-4 rounded-lg">
+                                <i class="fas fa-laptop-house text-purple-600 text-2xl mb-2"></i>
+                                <p class="text-sm font-medium">Onsite & Remote Support</p>
+                            </div>
+                            <div class="bg-purple-50 p-4 rounded-lg">
+                                <i class="fas fa-cogs text-purple-600 text-2xl mb-2"></i>
+                                <p class="text-sm font-medium">Customized Solutions</p>
+                            </div>
+                            <div class="bg-purple-50 p-4 rounded-lg">
+                                <i class="fas fa-graduation-cap text-purple-600 text-2xl mb-2"></i>
+                                <p class="text-sm font-medium">Professional Training</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-gradient-to-br from-purple-100 to-blue-100 p-8 rounded-2xl">
+                        <h4 class="font-bold text-gray-800 mb-6 text-xl">Industries We Serve</h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-white p-4 rounded-lg shadow-sm">
+                                <i class="fas fa-store text-purple-600 mb-2"></i>
+                                <p class="font-medium">Trading</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-sm">
+                                <i class="fas fa-industry text-purple-600 mb-2"></i>
+                                <p class="font-medium">Manufacturing</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-sm">
+                                <i class="fas fa-shopping-cart text-purple-600 mb-2"></i>
+                                <p class="font-medium">Retail</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-sm">
+                                <i class="fas fa-boxes text-purple-600 mb-2"></i>
+                                <p class="font-medium">Wholesale</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-sm">
+                                <i class="fas fa-concierge-bell text-purple-600 mb-2"></i>
+                                <p class="font-medium">Service Sector</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-sm">
+                                <i class="fas fa-users text-purple-600 mb-2"></i>
+                                <p class="font-medium">SMEs & CAs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Comprehensive business solutions tailored to your needs</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="service-card bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+                    <i class="fas fa-cash-register text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Tally Solutions</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>Tally Sales & Installation</li>
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>Tally Implementation</li>
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>TSS Renewal & Upgrade</li>
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>Data Migration</li>
+                    </ul>
+                </div>
+                <div class="service-card bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+                    <i class="fas fa-file-invoice-dollar text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">GST & Accounting</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>GST Setup & Reconciliation</li>
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>Accounting Automation</li>
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>Inventory Management</li>
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>Payroll Setup</li>
+                    </ul>
+                </div>
+                <div class="service-card bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+                    <i class="fas fa-cloud text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Cloud & Support</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>Tally on Cloud</li>
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>Remote Access</li>
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>AMC Services</li>
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>Data Recovery</li>
+                    </ul>
+                </div>
+                <div class="service-card bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+                    <i class="fas fa-cogs text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Customization</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>Tally Customization</li>
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>Excel to Tally Import</li>
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>Auto E-Way Bill</li>
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>Business Automation</li>
+                    </ul>
+                </div>
+                <div class="service-card bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+                    <i class="fas fa-chalkboard-teacher text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Training</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>Staff Training</li>
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>Accountant Training</li>
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>Corporate Training</li>
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>Tally Certification</li>
+                    </ul>
+                </div>
+                <div class="service-card bg-white p-8 rounded-xl shadow-md hover:shadow-xl transition-all duration-300">
+                    <i class="fas fa-desktop text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">IT Services</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>Computer Support</li>
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>Networking Solutions</li>
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>Technical Support</li>
+                        <li><i class="fas fa-check text-purple-500 mr-2"></i>Hardware Services</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Products</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Official Tally products for your business needs</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="product-card bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-xl border border-purple-200 transition-all duration-300">
+                    <i class="fas fa-user-shield text-5xl text-purple-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">TallyPrime Silver</h3>
+                    <p class="text-gray-600 mb-4">Single user license for small businesses</p>
+                    <a href="#contact" class="inline-block bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition">Learn More</a>
+                </div>
+                <div class="product-card bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-xl border border-purple-200 transition-all duration-300">
+                    <i class="fas fa-users text-5xl text-purple-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">TallyPrime Gold</h3>
+                    <p class="text-gray-600 mb-4">Multi-user license for growing businesses</p>
+                    <a href="#contact" class="inline-block bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition">Learn More</a>
+                </div>
+                <div class="product-card bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-xl border border-purple-200 transition-all duration-300">
+                    <i class="fas fa-server text-5xl text-purple-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Tally Server</h3>
+                    <p class="text-gray-600 mb-4">Enterprise-grade server solution</p>
+                    <a href="#contact" class="inline-block bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition">Learn More</a>
+                </div>
+                <div class="product-card bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-xl border border-purple-200 transition-all duration-300">
+                    <i class="fas fa-cloud-upload-alt text-5xl text-purple-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Tally on Cloud</h3>
+                    <p class="text-gray-600 mb-4">Access Tally from anywhere, anytime</p>
+                    <a href="#contact" class="inline-block bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Contact Us</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Get in touch with us for any queries</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <div class="bg-white p-8 rounded-xl shadow-md mb-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-6">Get In Touch</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-purple-600 text-xl mt-1 mr-4"></i>
+                                <div>
+                                    <p class="font-semibold text-gray-800">Head Office</p>
+                                    <p class="text-gray-600">10A, Bhutani Colony, Opposite Anandpur Satsang Bhawan, Balmik Nagar, Shanti Nagar, Hisar, Haryana 125001</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-phone-alt text-purple-600 text-xl mt-1 mr-4"></i>
+                                <div>
+                                    <p class="font-semibold text-gray-800">Phone</p>
+                                    <p class="text-gray-600">+91 92540 07440</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-clock text-purple-600 text-xl mt-1 mr-4"></i>
+                                <div>
+                                    <p class="font-semibold text-gray-800">Working Hours</p>
+                                    <p class="text-gray-600">Monday - Saturday: 09:30 AM - 06:00 PM</p>
+                                    <p class="text-gray-600">Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="http://www.sanyamconsultants.com" target="_blank" class="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition flex items-center">
+                            <i class="fas fa-globe mr-2"></i> Website
+                        </a>
+                        <a href="https://in.linkedin.com/company/sanyamconsultants" target="_blank" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition flex items-center">
+                            <i class="fab fa-linkedin mr-2"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-white p-8 rounded-xl shadow-md">
+                        <h3 class="text-xl font-bold text-gray-800 mb-6">Send us a Message</h3>
+                        <form id="contact-form" class="space-y-4">
+                            <div>
+                                <label class="block text-gray-700 mb-2">Name</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-500" required>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Email</label>
+                                <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-500" required>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Phone</label>
+                                <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-500">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Message</label>
+                                <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-purple-500" required></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Sanyam Consultants</h3>
+                    <p class="text-gray-400">Tally Certified Partner (3-Star) providing complete business solutions since 1998.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#products" class="text-gray-400 hover:text-white">Products</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Tally Solutions</li>
+                        <li>GST Services</li>
+                        <li>Training</li>
+                        <li>Data Recovery</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <p class="text-gray-400">+91 92540 07440</p>
+                    <p class="text-gray-400">Hisar, Haryana</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Sanyam Consultants. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Contact Form
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            contactForm.reset();
+        });
+    </script>
+</body>
+</html>
