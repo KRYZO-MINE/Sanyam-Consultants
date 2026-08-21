@@ -1,52 +1,56 @@
-# Sanyam Consultants - Official Website
+# Sanyam Consultants Website
 
-A professional, responsive website for Sanyam Consultants - a Tally Certified Partner (3-Star) providing complete business solutions since 1998.
+Official single-page website for Sanyam Consultants, a Tally Certified 3-Star sales and implementation partner in Hisar, Haryana.
 
 ## Features
 
-- **Responsive Design**: Works perfectly on desktop and mobile devices
-- **Modern UI**: Clean, professional design with smooth animations
-- **Sections**:
-  - Hero section with business highlights
-  - About section with company history
-  - Services section showcasing all offerings
-  - Products section featuring TallyPrime products
-  - Contact section with form and details
-- **Interactive Features**: Smooth scrolling, hover effects, mobile menu
-
-## Technologies Used
-
-- HTML5
-- Tailwind CSS (via CDN)
-- JavaScript
-- Font Awesome (for icons)
+- Responsive desktop, tablet, and mobile layout
+- Tally sales, implementation, training, support, AMC, and consulting content
+- Mobile navigation menu
+- FAQ accordion
+- Scroll reveal animations
+- Contact details, phone links, email link, Google Maps embed, and social links
+- SEO metadata, Open Graph metadata, Twitter metadata, and JSON-LD structured data
+- External PNG favicon
 
 ## Project Structure
 
-```
+```text
 Sanyam/
-├── index.html      # Main website file
-├── sitemap.xml     # Search engine sitemap
-├── robots.txt      # Search engine crawler instructions
-└── README.md       # This file
+├── index.html       # Complete website markup, SEO data, and page content
+├── css/
+│   └── style.css    # Layout, responsive styles, colors, and animations
+├── js/
+│   └── main.js      # Navigation, FAQ, menu, and scroll behavior
+├── robots.txt       # Search crawler instructions
+├── sitemap.xml      # Search engine sitemap
+└── README.md        # Project documentation
 ```
 
-## How to Use
+## How to Run
 
-1. Open `index.html` in your web browser to view the website
-2. Edit `index.html` to update content as needed
+Open `index.html` directly in a browser, or serve the folder with any static web server.
+
+For local development, VS Code Live Server can be used. No build step or framework is required.
+
+## Editing Guide
+
+- Update page content and SEO data in `index.html`.
+- Update visual styles and responsive behavior in `css/style.css`.
+- Update menu, FAQ, and animation behavior in `js/main.js`.
+- Keep the existing IDs and classes when changing markup because the CSS and JavaScript depend on them.
 
 ## Business Information
 
-- **Business Name**: Sanyam Consultants (Tally Certified Partner)
-- **Founded**: 2007 (business operations), IT experience since 1998
-- **Address**: 10A, Bhutani Colony, Opposite Anandpur Satsang Bhawan, Balmik Nagar, Shanti Nagar, Hisar, Haryana 125001, India
-- **Phone**: +91 92540 07440
-- **Website**: http://www.sanyamconsultants.com
-- **LinkedIn**: https://in.linkedin.com/company/sanyamconsultants
-- **Google Rating**: 4.8/5 (147+ reviews)
-- **Working Hours**: Monday-Saturday, 09:30 AM - 06:00 PM (Sunday closed)
+- **Business:** Sanyam Consultants
+- **Service:** Tally Certified 3-Star Sales and Implementation Partner
+- **Since:** 2004
+- **Address:** 10-A, Butani Colony, Opposite Sohan Cinema, Hisar, Haryana 125001, India
+- **Phone:** +91 9254007440, +91 9996737440, +91 8950665440
+- **Email:** sanyamconsultants@gmail.com
+- **Working hours:** Monday to Saturday, 9:30 AM to 6:00 PM
+- **Website:** https://www.sanyamconsultants.com/
 
 ## License
 
-&copy; 2026 Sanyam Consultants. All rights reserved.
+Copyright 2026 Sanyam Consultants. All rights reserved.
