@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://www.sanyamconsultants.com/sitemap.xml
+Sitemap: https://www.sanyamconsultants.com/sitemap.xml
