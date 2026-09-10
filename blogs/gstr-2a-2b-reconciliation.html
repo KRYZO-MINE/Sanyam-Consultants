@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GSTR 2A &amp; GSTR 2B Reconciliation in TallyPrime | Maximize ITC</title>
+<meta name="description" content="Reconcile purchase ledgers with GSTR 2A and 2B JSON/Excel downloads inside Tally. Auto-match, find mismatches, prepare ITC reversal before GSTR-3B filing.">
+<meta name="keywords" content="GSTR 2A reconciliation Tally, GSTR 2B matching TallyPrime, ITC claim reconciliation, mismatch report Tally">
+<meta name="author" content="Sanyam Consultants | TallyPrime & Accounting Software Experts in Hisar">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.sanyamconsultants.com/blogs/gstr-2a-2b-reconciliation.html">
+<link rel="icon" type="image/png" href="https://files.catbox.moe/q5i3iu.png">
+
+<meta property="og:title" content="GSTR 2A &amp; GSTR 2B Reconciliation in TallyPrime | Maximize ITC">
+<meta property="og:description" content="Reconcile purchase ledgers with GSTR 2A and 2B JSON/Excel downloads inside Tally. Auto-match, find mismatches, prepare ITC reversal before GSTR-3B filing.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.sanyamconsultants.com/blogs/gstr-2a-2b-reconciliation.html">
+<meta property="og:locale" content="en_IN">
+<meta property="og:site_name" content="Sanyam Consultants">
+<meta property="og:image" content="https://files.catbox.moe/fvliwl.jpg">
+<meta property="og:image:type" content="image/jpg">
+<meta property="og:image:width" content="854">
+<meta property="og:image:height" content="480">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GSTR 2A &amp; 2B Reconciliation in TallyPrime">
+<meta name="twitter:description" content="Reconcile purchase ledgers with GSTR 2A/2B and maximize ITC claims inside TallyPrime.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "GSTR 2A &amp; GSTR 2B Reconciliation in TallyPrime",
+  "description": "Reconcile purchase ledgers with GSTR 2A and 2B JSON/Excel downloads inside Tally. Auto-match, find mismatches, prepare ITC reversal before GSTR-3B filing.",
+  "author": { "@type": "Organization", "name": "Sanyam Consultants" },
+  "publisher": { "@type": "Organization", "name": "Sanyam Consultants" },
+  "datePublished": "2026-09-10",
+  "mainEntityOfPage": "https://www.sanyamconsultants.com/blogs/gstr-2a-2b-reconciliation.html"
+}
+</script>
+
+<link rel="stylesheet" href="../css/style.css">
+<style id="vvvebjs-styles"></style></head><body>
+
+<header id="header" class="scrolled">
+  <div class="container">
+    <nav class="nav">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">
+          <img src="https://files.catbox.moe/n3zab7.png" alt="Sanyam Consultants Logo" width="53" height="55">
+        </div>
+        <div class="logo-text">
+          SANYAM
+          <small>CONSULTANTS</small>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#services">Services</a></li>
+        <li><a href="../index.html#areas">Service Areas</a></li>
+        <li><a href="../index.html#faq">FAQ</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+      <a href="../index.html#contact" class="nav-cta">Get in Touch</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+
+<section class="post-hero">
+  <div class="container">
+    <div class="post-hero-content reveal visible">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="sep">/</span>
+        <a href="../blog.html">Blog</a>
+        <span class="sep">/</span>
+        <span>GSTR 2A &amp; 2B Reconciliation</span>
+      </div>
+      <h1>GSTR 2A &amp; GSTR 2B Reconciliation in TallyPrime | Maximize ITC</h1>
+      <div class="post-meta">
+        <div class="post-meta-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Sep 2026
+        </div>
+        <span class="sep">&middot;</span>
+        <div class="post-meta-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          6 min read
+        </div>
+      </div>
+      <div class="post-featured-icon">
+        <div class="blog-icon-wrap">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path><path d="M3 9h18"></path></svg>
+        </div>
+        <p><strong>Match purchase books with GST portal data in minutes &mdash; not hours. Auto-detect mismatches and claim every rupee of eligible Input Tax Credit.</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="post-content-wrap">
+  <div class="container">
+    <div class="post-content">
+
+      <h2>Overview</h2>
+      <p>GSTR 2A and GSTR 2B reconciliation is one of the most critical monthly GST compliance activities for every registered business in India. GSTR 2A is a dynamic, auto-populated return that reflects all invoices uploaded by your suppliers in their GSTR-1. GSTR 2B, by contrast, is a static statement generated on the 14th of every month that provides a fixed snapshot of eligible ITC for that tax period. Proper reconciliation of these two statements with your TallyPrime purchase ledgers ensures you do not lose even a single rupee of eligible Input Tax Credit, while also helping you identify which invoices need follow-up with suppliers before filing GSTR-3B.</p>
+      <p>TallyPrime ships with built-in GSTR 2A and 2B reconciliation capabilities that remove the need for manual Excel VLOOKUPs or third-party tools. You can download JSON or Excel files directly from the GST portal, import them into TallyPrime, and let the software auto-match invoices based on GSTIN, invoice number, date, and taxable value. Any mismatches are clearly flagged, and the system helps you take corrective actions such as asking suppliers to file pending invoices or reversing ITC where credit is not eligible. This guide walks you through the complete reconciliation workflow and explains how to use TallyPrime to handle the most common mismatch scenarios you are likely to encounter.</p>
+      <p>Businesses that skip proper 2A/2B reconciliation typically lose 2&ndash;5% of eligible ITC every month due to missed invoices, incorrect values, or suppliers who forget to file. Over a financial year this can add up to lakhs of rupees in lost tax savings. Using TallyPrime&rsquo;s reconciliation features is the most reliable way to protect your bottom line while staying fully compliant with GST law.</p>
+
+      <h2>Key Benefits</h2>
+      <div class="post-benefits-grid">
+        <div class="post-benefit">
+          <div class="post-benefit-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+          </div>
+          <div>
+            <h5>Maximize ITC Claims</h5>
+            <p>Capture every rupee of eligible Input Tax Credit by matching 100% of purchases.</p>
+          </div>
+        </div>
+        <div class="post-benefit">
+          <div class="post-benefit-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v18H3z"></path><path d="M9 9h6v6H9z"></path></svg>
+          </div>
+          <div>
+            <h5>Auto-Match Invoices</h5>
+            <p>Tally matches by GSTIN, invoice no, date and value in seconds with no manual work.</p>
+          </div>
+        </div>
+        <div class="post-benefit">
+          <div class="post-benefit-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+          </div>
+          <div>
+            <h5>Spot Mismatches</h5>
+            <p>Instantly detect supplier not filed, amount diffs, or party GSTIN mismatches.</p>
+          </div>
+        </div>
+        <div class="post-benefit">
+          <div class="post-benefit-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+          </div>
+          <div>
+            <h5>Error-Free GSTR-3B</h5>
+            <p>File accurate monthly returns with correct ITC values and avoid GST notices.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>Step-by-Step Guide</h2>
+      <div class="post-steps">
+        <div class="post-step">
+          <div class="post-step-num">1</div>
+          <div class="post-step-text">
+            <h4>Download GSTR 2A / 2B from GST Portal</h4>
+            <p>Log in to the GST portal, go to Services &rarr; Returns &rarr; Returns Dashboard. Select the financial year and return period (month). Under &ldquo;Auto drafted ITC details (GSTR 2B)&rdquo; click Download and save the JSON or Excel file to your computer. For GSTR 2A, open the 2A tile and use the Download button for the full period.</p>
+          </div>
+        </div>
+        <div class="post-step">
+          <div class="post-step-num">2</div>
+          <div class="post-step-text">
+            <h4>Open GSTR-2 Reconciliation in TallyPrime</h4>
+            <p>Launch TallyPrime and open your company. Go to Gateway of Tally &rarr; Display More Reports &rarr; GST Reports &rarr; GSTR-2. The system opens the GSTR-2 report showing all purchase vouchers recorded in your books for the tax period.</p>
+          </div>
+        </div>
+        <div class="post-step">
+          <div class="post-step-num">3</div>
+          <div class="post-step-text">
+            <h4>Import the Downloaded JSON/Excel File</h4>
+            <p>With GSTR-2 report open, press Ctrl+O (Upload) &rarr; select &ldquo;Import GSTR-2A/2B&rdquo;. Browse to the JSON or Excel file you downloaded from the GST portal, select it, and confirm. TallyPrime will parse the file and load all supplier-filed invoices into the reconciliation workspace.</p>
+          </div>
+        </div>
+        <div class="post-step">
+          <div class="post-step-num">4</div>
+          <div class="post-step-text">
+            <h4>Run Auto-Match with Your Purchase Books</h4>
+            <p>After import, click the &ldquo;Match with Books&rdquo; button (or press Alt+M). TallyPrime automatically compares every GST portal invoice against your recorded purchase vouchers using supplier GSTIN, invoice number, invoice date, and taxable amount. Matched items move to the &ldquo;Matched&rdquo; tab.</p>
+          </div>
+        </div>
+        <div class="post-step">
+          <div class="post-step-num">5</div>
+          <div class="post-step-text">
+            <h4>Review Mismatches &amp; Take Corrective Action</h4>
+            <p>Open the &ldquo;Mismatch&rdquo; and &ldquo;Not in Books / Not in 2B&rdquo; tabs one by one. For each entry: (a) if invoice exists in portal but not books, create the missing purchase voucher; (b) if value differs, amend your voucher or request supplier correction; (c) if supplier has not filed, send a reminder to upload GSTR-1 before the cutoff date.</p>
+          </div>
+        </div>
+        <div class="post-step">
+          <div class="post-step-num">6</div>
+          <div class="post-step-text">
+            <h4>Prepare Reversal &amp; Finalize ITC for GSTR-3B</h4>
+            <p>Once all corrections are done, use the &ldquo;Reconciled ITC Summary&rdquo; to identify ineligible credits (expired, blocked, mismatched beyond tolerance). Pass necessary journal vouchers for ITC reversal in TallyPrime, then use the final reconciled values to fill Table 4 of GSTR-3B and file your return confidently.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>Pro Tips</h2>
+      <div class="post-box">
+        <ul>
+          <li><strong>Always reconcile against GSTR 2B &mdash; not 2A &mdash; before filing GSTR-3B.</strong> 2B is a static statement and is the official basis for eligible ITC claims. 2A keeps changing and should only be used for tracking long-term pending invoices.</li>
+          <li><strong>Set a reminder for the 14th of every month.</strong> GSTR 2B is generated on the 14th; reconcile between the 14th and 18th so you still have 2&ndash;3 days to follow up with defaulting suppliers before you file 3B on the 20th.</li>
+          <li><strong>Use tolerance limits for minor value differences.</strong> TallyPrime allows you to set a tolerance percentage or amount so small rounding differences (e.g., &plusmn;0.5%) auto-match instead of showing up as mismatches.</li>
+          <li><strong>Export mismatch report as Excel and share with your CAs or purchase team.</strong> TallyPrime can export the full mismatch list with supplier GSTIN and invoice numbers, making supplier follow-ups much easier.</li>
+        </ul>
+      </div>
+
+      <h2>Frequently Asked Questions</h2>
+      <div class="post-faq">
+        <div class="post-faq-item">
+          <button class="post-faq-q">
+            What is the difference between GSTR 2A and GSTR 2B?
+            <span>+</span>
+          </button>
+          <div class="post-faq-a">
+            <p>GSTR 2A is a dynamic, real-time statement that keeps updating whenever your suppliers file or amend their GSTR-1. GSTR 2B is a static, read-only snapshot generated once a month (on the 14th) specifically for ITC claim purposes. The GST department recommends using 2B values for filing GSTR-3B because it is fixed and auditable.</p>
+          </div>
+        </div>
+        <div class="post-faq-item">
+          <button class="post-faq-q">
+            My supplier uploaded an invoice in 2A but I cannot find it in 2B. Why?
+            <span>+</span>
+          </button>
+          <div class="post-faq-a">
+            <p>GSTR 2B only includes invoices filed by your supplier on or before the 13th of the next month. If the supplier filed GSTR-1 after the 13th, the invoice will appear in 2A but will be moved to the next month&rsquo;s 2B statement. You can claim ITC in that subsequent month instead.</p>
+          </div>
+        </div>
+        <div class="post-faq-item">
+          <button class="post-faq-q">
+            Can TallyPrime reconcile GSTR data for multiple months at once?
+            <span>+</span>
+          </button>
+          <div class="post-faq-a">
+            <p>Yes. You can change the period in the GSTR-2 report to cover a quarter or full financial year, import 2A/2B files for all those months together, and TallyPrime will auto-match across the entire period. This is useful for year-end audits or pending reconciliations.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-bottom-nav">
+        <a href="../blog.html" class="back-to-blog">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg>
+          Back to Blog
+        </a>
+        <a href="../index.html#contact" class="btn btn-primary">
+          Need help? Contact Us
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="related-posts">
+  <div class="container">
+    <div class="section-header reveal visible">
+      <span class="section-label">Keep Reading</span>
+      <h2 class="section-title">Related Articles</h2>
+    </div>
+    <div class="related-grid">
+      <article class="related-card reveal visible">
+        <div class="related-card-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+        </div>
+        <h4><a href="eway-bill-einvoice.html">E-Invoice &amp; E-Way Bill Generation and Cancellation in Tally</a></h4>
+        <p>1-click IRN generation, signed QR PDF, e-way bill Part A/B, bulk actions, cancellation and rejection handling.</p>
+        <a href="eway-bill-einvoice.html" class="related-read-more">Read More <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a>
+      </article>
+      <article class="related-card reveal visible">
+        <div class="related-card-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle><path d="M12 7v6M9 10h6"></path></svg>
+        </div>
+        <h4><a href="bharat-connect.html">Bharat Connect in TallyPrime: E-Invoicing Made Easy</a></h4>
+        <p>Direct 1-click e-invoice and e-way bill generation from Tally without any third-party portals via Bharat Connect.</p>
+        <a href="bharat-connect.html" class="related-read-more">Read More <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a>
+      </article>
+      <article class="related-card reveal visible">
+        <div class="related-card-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+        </div>
+        <h4><a href="tallyprime-7.1-release.html">TallyPrime 7.1 Release: New Features Overview &amp; Upgrade Guide</a></h4>
+        <p>TallyIRA AI, enhanced Bharat Connect, Connected Banking additions, better GSTR 2A/2B recon and TallyDrive backup.</p>
+        <a href="tallyprime-7.1-release.html" class="related-read-more">Read More <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo">
+          <div class="logo-icon">
+            <img src="https://files.catbox.moe/n3zab7.png" alt="Sanyam Consultants Logo">
+          </div>
+          <div class="logo-text">
+            SANYAM
+            <small>CONSULTANTS</small>
+          </div>
+        </a>
+        <p>Tally Certified 3-star sales and implementation partner since 2004. Empowering businesses in Hisar, Haryana and beyond with expert accounting solutions.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/sanjaymehtatally" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          </a>
+          <a href="https://www.instagram.com/sanyamconsultants/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="https://www.youtube.com/@SanjayMehtahisar" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.5-.4-5.1c-.2-.8-.8-1.4-1.6-1.6C19.4 5 12 5 12 5s-7.4 0-9 .3c-.8.2-1.4.8-1.6 1.6C1 8.5 1 12 1 12s0 3.5.4 5.1c.2.8.8 1.4 1.6 1.6 1.6.3 9 .3 9 .3s7.4 0 9-.3c.8-.2 1.4-.8 1.6-1.6.4-1.6.4-5.1.4-5.1zM10 15.5v-7l6 3.5-6 3.5z"></path></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../index.html#about">About Us</a></li>
+          <li><a href="../index.html#services">Services</a></li>
+          <li><a href="../index.html#process">Our Process</a></li>
+          <li><a href="../index.html#testimonials">Testimonials</a></li>
+          <li><a href="../index.html#areas">Service Areas</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../index.html#faq">FAQ</a></li>
+          <li><a href="../index.html#why">Why Choose Us</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Tally Certified Services</h4>
+        <ul>
+          <li><a href="../index.html#services">Tally Sales</a></li>
+          <li><a href="../index.html#services">Implementation</a></li>
+          <li><a href="../index.html#services">Training</a></li>
+          <li><a href="../index.html#services">Support</a></li>
+          <li><a href="../index.html#services">AMC Services</a></li>
+          <li><a href="../index.html#services">Business Consulting</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Sanyam Consultants. All rights reserved. Powered By MBG Card Pvt. Ltd. | Tally Certified 3-Star Partner in Hisar, Haryana
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body></html>

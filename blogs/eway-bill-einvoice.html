@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>e-Invoice &amp; e-Way Bill Generation and Cancellation in Tally</title>
+<meta name="description" content="1-click e-invoice IRN generation, signed QR PDF, e-way bill Part A/B generation, bulk actions, IRN cancellation and rejection handling.">
+<meta name="keywords" content="e-invoice TallyPrime, e-way bill Tally, IRN generation, cancel e-invoice Tally">
+<meta name="author" content="Sanyam Consultants | TallyPrime & Accounting Software Experts in Hisar">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.sanyamconsultants.com/blogs/eway-bill-einvoice.html">
+<link rel="icon" type="image/png" href="https://files.catbox.moe/q5i3iu.png">
+
+<meta property="og:title" content="e-Invoice &amp; e-Way Bill Generation and Cancellation in Tally">
+<meta property="og:description" content="1-click e-invoice IRN generation, signed QR PDF, e-way bill Part A/B generation, bulk actions, IRN cancellation and rejection handling.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.sanyamconsultants.com/blogs/eway-bill-einvoice.html">
+<meta property="og:locale" content="en_IN">
+<meta property="og:site_name" content="Sanyam Consultants">
+<meta property="og:image" content="https://files.catbox.moe/fvliwl.jpg">
+<meta property="og:image:type" content="image/jpg">
+<meta property="og:image:width" content="854">
+<meta property="og:image:height" content="480">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="e-Invoice &amp; e-Way Bill in TallyPrime">
+<meta name="twitter:description" content="IRN generation, QR PDF, e-way bill Part A/B, cancellation and rejection handling in one click.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "e-Invoice &amp; e-Way Bill Generation and Cancellation in Tally",
+  "description": "1-click e-invoice IRN generation, signed QR PDF, e-way bill Part A/B generation, bulk actions, IRN cancellation and rejection handling.",
+  "author": { "@type": "Organization", "name": "Sanyam Consultants" },
+  "publisher": { "@type": "Organization", "name": "Sanyam Consultants" },
+  "datePublished": "2026-09-10",
+  "mainEntityOfPage": "https://www.sanyamconsultants.com/blogs/eway-bill-einvoice.html"
+}
+</script>
+
+<link rel="stylesheet" href="../css/style.css">
+<style id="vvvebjs-styles"></style></head><body>
+
+<header id="header" class="scrolled">
+  <div class="container">
+    <nav class="nav">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">
+          <img src="https://files.catbox.moe/n3zab7.png" alt="Sanyam Consultants Logo" width="53" height="55">
+        </div>
+        <div class="logo-text">
+          SANYAM
+          <small>CONSULTANTS</small>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#services">Services</a></li>
+        <li><a href="../index.html#areas">Service Areas</a></li>
+        <li><a href="../index.html#faq">FAQ</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+      <a href="../index.html#contact" class="nav-cta">Get in Touch</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+
+<section class="post-hero">
+  <div class="container">
+    <div class="post-hero-content reveal visible">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="sep">/</span>
+        <a href="../blog.html">Blog</a>
+        <span class="sep">/</span>
+        <span>e-Invoice &amp; e-Way Bill</span>
+      </div>
+      <h1>e-Invoice &amp; e-Way Bill Generation and Cancellation in Tally</h1>
+      <div class="post-meta">
+        <div class="post-meta-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Sep 2026
+        </div>
+        <span class="sep">&middot;</span>
+        <div class="post-meta-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          6 min read
+        </div>
+      </div>
+      <div class="post-featured-icon">
+        <div class="blog-icon-wrap">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+        </div>
+        <p><strong>Generate IRN, signed QR invoice and e-way bill with a single click from any sales voucher. Cancel, reject or extend seamlessly inside TallyPrime.</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="post-content-wrap">
+  <div class="container">
+    <div class="post-content">
+
+      <h2>Overview</h2>
+      <p>Since its mandate for businesses with turnover above 5 crore, e-invoicing has become a core GST compliance activity that no supplier can afford to ignore. The e-invoice system requires every tax invoice to be registered on the GSTN Invoice Registration Portal (IRP) to obtain a 64-character Invoice Reference Number (IRN) and a digitally signed QR code. Alongside, inter-state and even many intra-state movements of goods require a valid e-way bill with Part A and Part B details. TallyPrime offers end-to-end integration with both the e-invoice and e-way bill systems, so you never have to leave your accounting software or manually re-enter data on any portal.</p>
+      <p>Unlike disconnected web portals where you must upload spreadsheets or re-key invoices one at a time, TallyPrime lets you generate the IRN and e-way bill directly while saving a sales voucher. The system validates all data fields against GSTN rules before sending, catches errors early, and once the IRN is generated it automatically prints the signed QR code and IRN number on every copy of your invoice. For transport movements, you can generate Part A from the invoice, add vehicle details for Part B later, and even extend or cancel e-way bills if delivery schedules change.</p>
+      <p>This guide covers the full e-invoice and e-way bill lifecycle inside TallyPrime &mdash; from one-time GSTIN registration and F11 features enablement, through bulk IRN generation, printing signed QR invoices, handling rejections from the IRP, cancelling IRNs within the 24-hour window, and extending or cancelling e-way bills when delivery is delayed or routes change.</p>
+
+      <h2>Key Benefits</h2>
+      <div class="post-benefits-grid">
+        <div class="post-benefit">
+          <div class="post-benefit-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+          </div>
+          <div>
+            <h5>1-Click IRN Generation</h5>
+            <p>Generate IRN and e-way bill simultaneously while saving your sales voucher.</p>
+          </div>
+        </div>
+        <div class="post-benefit">
+          <div class="post-benefit-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"></path><path d="M7 14l4-4 4 4 5-5"></path></svg>
+          </div>
+          <div>
+            <h5>Bulk Actions Supported</h5>
+            <p>Send 100s of pending invoices to IRP at once from the e-invoice report.</p>
+          </div>
+        </div>
+        <div class="post-benefit">
+          <div class="post-benefit-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </div>
+          <div>
+            <h5>Auto QR &amp; Signing</h5>
+            <p>Signed QR code and IRN automatically appear on your printed invoice PDF.</p>
+          </div>
+        </div>
+        <div class="post-benefit">
+          <div class="post-benefit-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="15 9 9 15 15 15"></polyline></svg>
+          </div>
+          <div>
+            <h5>Cancel &amp; Extend</h5>
+            <p>Cancel IRN within 24 hrs or extend e-way bill validity when delivery delays.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>Step-by-Step Guide</h2>
+      <div class="post-steps">
+        <div class="post-step">
+          <div class="post-step-num">1</div>
+          <div class="post-step-text">
+            <h4>Register GSTIN on E-Invoice &amp; E-Way Bill Portal</h4>
+            <p>Before using the feature in TallyPrime, one authorised signatory from your business must log in to the e-invoice portal (einvoice1.gst.gov.in) and e-way bill portal (ewaybillgst.gov.in) using GSTIN credentials. Go to API Registration &rarr; Create User and generate a username and password specifically for API-based integration. Keep these credentials ready as you will enter them in TallyPrime.</p>
+          </div>
+        </div>
+        <div class="post-step">
+          <div class="post-step-num">2</div>
+          <div class="post-step-text">
+            <h4>Enable E-Invoicing and E-Way Bill from F11 Features</h4>
+            <p>Open TallyPrime and load your company. Press F11 (Features) &rarr; set &ldquo;Enable Goods and Services Tax (GST)&rdquo; to Yes. Under GST details, enable both &ldquo;Is e-Invoicing applicable?&rdquo; and &ldquo;Is e-Way Bill applicable?&rdquo; options. Enter the applicable turnover threshold date, your registered e-invoice username and password, and save the configuration.</p>
+          </div>
+        </div>
+        <div class="post-step">
+          <div class="post-step-num">3</div>
+          <div class="post-step-text">
+            <h4>Generate IRN on Voucher Save (Online Mode)</h4>
+            <p>Create a sales voucher (Accounting Invoice or Item Invoice) as usual. Fill in party details, GSTIN, HSN/SAC codes, taxable values and tax rates correctly. Before accepting, press Ctrl+I (or click e-Invoice button) and select &ldquo;Generate IRN&rdquo;. Tally validates fields, sends to IRP, and on success the 64-char IRN, Acknowledgement No and Signed QR are stored against the voucher.</p>
+          </div>
+        </div>
+        <div class="post-step">
+          <div class="post-step-num">4</div>
+          <div class="post-step-text">
+            <h4>Generate E-Way Bill Part A &amp; Part B with Vehicle Details</h4>
+            <p>After IRN is generated, the same voucher can also generate the e-way bill. Press Ctrl+W (e-Way Bill) &rarr; &ldquo;Generate E-Way Bill&rdquo;. The Part A fields (invoice, value, GSTINs, consignee address) auto-fill. For Part B enter distance (in km), transporter name or ID, vehicle type and vehicle number. Submit and the system returns a 12-digit EWB No and validity date.</p>
+          </div>
+        </div>
+        <div class="post-step">
+          <div class="post-step-num">5</div>
+          <div class="post-step-text">
+            <h4>Print Invoice with Signed QR Code &amp; IRN</h4>
+            <p>Open any voucher that has an IRN and press Ctrl+P (Print). Under the print configuration, ensure &ldquo;Print QR Code&rdquo; and &ldquo;Print IRN&rdquo; options are enabled. Tally prints a tax invoice copy that includes the signed JSON QR (scannable by GST officers using the QR verify app), IRN number, Acknowledgement date, EWB No and transporter details alongside your company logo and signature.</p>
+          </div>
+        </div>
+        <div class="post-step">
+          <div class="post-step-num">6</div>
+          <div class="post-step-text">
+            <h4>Cancel IRN or Extend / Cancel E-Way Bill When Needed</h4>
+            <p>If an invoice was wrongly generated, open the voucher &rarr; Ctrl+I &rarr; Cancel IRN. Choose a cancellation reason (duplicate, data entry error, order cancelled etc.) and submit within 24 hours. For e-way bills press Ctrl+W &rarr; Extend Validity or Cancel E-Way Bill, provide reason and remarks, and the status updates directly on the portal.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>Pro Tips</h2>
+      <div class="post-box">
+        <ul>
+          <li><strong>Always send to IRP in &ldquo;Generate on save&rdquo; mode for live businesses.</strong> This lets you catch validation errors instantly instead of accumulating 100+ failed invoices at day end. If internet is down Tally automatically queues them offline and retries when connection is restored.</li>
+          <li><strong>Use the E-Invoice Report (Alt+G &rarr; E-Invoice Register) to spot pending items.</strong> This report groups vouchers into To Generate, Generated, Failed, Cancelled. Click any Failed row, press Alt+V to see the exact GSTN error message (e.g., invalid HSN, mismatched PIN code) and correct it in place.</li>
+          <li><strong>For bulk generation of older backdated invoices, use the Offline Excel Utility first.</strong> If you have thousands of pending invoices from before e-invoice was enabled, export them from TallyPrime to Excel, upload via the IRP offline tool to get IRNs, then import IRNs back into Tally using &ldquo;Update from Excel&rdquo; &mdash; much faster than API bulk send.</li>
+          <li><strong>IRN cancellation is final within 24 hours and cannot be undone.</strong> If you cancel an IRN by mistake, the original invoice becomes invalid for GST purposes. You must create a fresh copy of the sales voucher with a new invoice number and generate a brand new IRN.</li>
+        </ul>
+      </div>
+
+      <h2>Frequently Asked Questions</h2>
+      <div class="post-faq">
+        <div class="post-faq-item">
+          <button class="post-faq-q">
+            Can I generate e-way bill without generating e-invoice first?
+            <span>+</span>
+          </button>
+          <div class="post-faq-a">
+            <p>Yes. For businesses under the e-invoice threshold (below 5 crore turnover), you can use only the e-way bill feature by enabling it separately in F11. For businesses above threshold, once an IRN is generated the e-way bill system automatically pulls invoice data from IRP, so it is recommended to generate IRN first and then Part A/B to avoid duplicate data entry.</p>
+          </div>
+        </div>
+        <div class="post-faq-item">
+          <button class="post-faq-q">
+            What happens if IRP rejects my e-invoice request?
+            <span>+</span>
+          </button>
+          <div class="post-faq-a">
+            <p>Rejections happen mostly due to data errors &mdash; invalid GSTIN checksum, wrong place of supply, invalid HSN code, party state mismatch, or duplicate invoice number. TallyPrime stores the exact error message returned by IRP. Open the voucher, press Alt+V to read the error, correct the underlying data, and re-submit. The most common fix is correcting the State code of the customer ledger or fixing a typo in GSTIN.</p>
+          </div>
+        </div>
+        <div class="post-faq-item">
+          <button class="post-faq-q">
+            My e-way bill expired but goods are still in transit. Can I extend?
+            <span>+</span>
+          </button>
+          <div class="post-faq-a">
+            <p>Yes. You can extend the validity of an e-way bill either before expiry or within 8 hours after its expiry. In TallyPrime open the voucher &rarr; Ctrl+W &rarr; Extend Validity. You must select a reason (natural calamity, transshipment delay, law and order issue etc.), enter the current location of goods, remaining distance and submit. A new validity period is calculated based on distance per GST rules.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-bottom-nav">
+        <a href="../blog.html" class="back-to-blog">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"></path></svg>
+          Back to Blog
+        </a>
+        <a href="../index.html#contact" class="btn btn-primary">
+          Need help? Contact Us
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"></path></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="related-posts">
+  <div class="container">
+    <div class="section-header reveal visible">
+      <span class="section-label">Keep Reading</span>
+      <h2 class="section-title">Related Articles</h2>
+    </div>
+    <div class="related-grid">
+      <article class="related-card reveal visible">
+        <div class="related-card-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle><path d="M12 7v6M9 10h6"></path></svg>
+        </div>
+        <h4><a href="bharat-connect.html">Bharat Connect in TallyPrime: E-Invoicing Made Easy</a></h4>
+        <p>Bharat Connect gives you 1-click direct e-invoice &amp; e-way bill generation from Tally without any third-party portals.</p>
+        <a href="bharat-connect.html" class="related-read-more">Read More <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a>
+      </article>
+      <article class="related-card reveal visible">
+        <div class="related-card-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"></path><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path><path d="M3 9h18"></path></svg>
+        </div>
+        <h4><a href="gstr-2a-2b-reconciliation.html">GSTR 2A &amp; GSTR 2B Reconciliation in TallyPrime</a></h4>
+        <p>Claim 100% ITC by matching purchase books with GSTR 2A/2B downloads. Auto detect mismatches before filing.</p>
+        <a href="gstr-2a-2b-reconciliation.html" class="related-read-more">Read More <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a>
+      </article>
+      <article class="related-card reveal visible">
+        <div class="related-card-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+        </div>
+        <h4><a href="printing-templates.html">Custom Printing Templates in TallyPrime</a></h4>
+        <p>Create multiple print layouts for tax invoices, delivery challans with QR, IRN, logo and signature placement.</p>
+        <a href="printing-templates.html" class="related-read-more">Read More <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"></path></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo">
+          <div class="logo-icon">
+            <img src="https://files.catbox.moe/n3zab7.png" alt="Sanyam Consultants Logo">
+          </div>
+          <div class="logo-text">
+            SANYAM
+            <small>CONSULTANTS</small>
+          </div>
+        </a>
+        <p>Tally Certified 3-star sales and implementation partner since 2004. Empowering businesses in Hisar, Haryana and beyond with expert accounting solutions.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/sanjaymehtatally" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          </a>
+          <a href="https://www.instagram.com/sanyamconsultants/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="https://www.youtube.com/@SanjayMehtahisar" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.5-.4-5.1c-.2-.8-.8-1.4-1.6-1.6C19.4 5 12 5 12 5s-7.4 0-9 .3c-.8.2-1.4.8-1.6 1.6C1 8.5 1 12 1 12s0 3.5.4 5.1c.2.8.8 1.4 1.6 1.6 1.6.3 9 .3 9 .3s7.4 0 9-.3c.8-.2 1.4-.8 1.6-1.6.4-1.6.4-5.1.4-5.1zM10 15.5v-7l6 3.5-6 3.5z"></path></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../index.html#about">About Us</a></li>
+          <li><a href="../index.html#services">Services</a></li>
+          <li><a href="../index.html#process">Our Process</a></li>
+          <li><a href="../index.html#testimonials">Testimonials</a></li>
+          <li><a href="../index.html#areas">Service Areas</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="../index.html#faq">FAQ</a></li>
+          <li><a href="../index.html#why">Why Choose Us</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Tally Certified Services</h4>
+        <ul>
+          <li><a href="../index.html#services">Tally Sales</a></li>
+          <li><a href="../index.html#services">Implementation</a></li>
+          <li><a href="../index.html#services">Training</a></li>
+          <li><a href="../index.html#services">Support</a></li>
+          <li><a href="../index.html#services">AMC Services</a></li>
+          <li><a href="../index.html#services">Business Consulting</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Sanyam Consultants. All rights reserved. Powered By MBG Card Pvt. Ltd. | Tally Certified 3-Star Partner in Hisar, Haryana
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body></html>
