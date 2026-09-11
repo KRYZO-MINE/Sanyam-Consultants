@@ -95,14 +95,13 @@
         </div>
       </div>
       <div class="post-featured-icon">
-        <div class="blog-icon-wrap">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path><rect x="9" y="8" width="6" height="3" rx="1"></rect><circle cx="12" cy="14" r="1"></circle></svg>
-        </div>
+        <img src="../images/blogs/ledger-from-gstin-featured.jpg" alt="Create ledger from GSTIN auto-fetch party details icon" class="post-featured-img">
         <div>
           <h3 style="font-weight:700;color:var(--dark);margin-bottom:4px;">Auto-Fetch Party Details from GST Portal</h3>
           <p style="margin:0;color:var(--gray);font-size:.95rem;">Enter a 15-digit GSTIN — TallyPrime pulls legal name, state, PAN, address, and tax type directly from GSTN. Zero manual entry, zero mistakes.</p>
         </div>
       </div>
+      <div class="post-hero-banner"><img src="../images/blogs/ledger-from-gstin-hero.jpg" alt="TallyPrime create ledger from GSTIN feature auto-fetching party name, state, PAN from GST portal"></div>
     </div>
   </div>
 </section>
@@ -110,7 +109,6 @@
 <section class="post-content-wrap">
   <div class="container">
     <article class="post-content">
-
       <h2>Overview</h2>
       <p>Manually creating party ledgers — Sundry Debtors (customers) and Sundry Creditors (suppliers) — is one of the most tedious and error-prone parts of TallyPrime data entry. Each ledger takes 2 to 5 minutes to create from scratch, and every manual keystroke introduces risk: a transposed digit in the GSTIN, an accidentally selected wrong state code that causes CGST/SGST to be calculated instead of IGST (or vice versa), a PAN with one character wrong that later fails during GSTR-1 filing, or a spelling mismatch in the legal name that leads to GST reconciliation mismatches at the end of the month. TallyPrime Release 6.1 and later versions solved this problem elegantly by adding the <strong>"Create from GSTIN"</strong> feature, which performs a real-time GSTN public API lookup right from within the ledger creation screen. Simply enter the 15-digit GSTIN of the party, and within seconds TallyPrime pulls back and auto-fills the Legal Name of Business, Trade Name (if different from legal name), the correct State &amp; Jurisdiction derived from the first two digits, the PAN (automatically extracted from the 3rd to 12th characters of the valid GSTIN), the Constitution Type (Proprietorship, Partnership, Private Limited Company, LLP, Public Sector Undertaking, etc.), and even the Registered Office Address as recorded on the GST portal. No more manual double-checking of state codes or cross-referencing PAN cards — TallyPrime gives you GSTN-verified data in one click.</p>
 
