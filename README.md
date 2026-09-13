@@ -1,5 +1,5 @@
 # Sanyam Consultants Website
-
+![Sanyam Consultants Website](https://files.catbox.moe/fvliwl.jpg)
 Official single-page website for Sanyam Consultants, a Tally Certified 3-Star sales and implementation partner in Hisar, Haryana.
 
 ## Features
