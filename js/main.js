@@ -23,10 +23,37 @@ function initializePage() {
     navLinks.classList.toggle('active');
   });
 
+  document.querySelectorAll('.nav-dropdown-toggle').forEach(toggle => {
+    toggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      const parentLi = toggle.closest('li');
+      const wasOpen = parentLi.classList.contains('dropdown-open');
+      document.querySelectorAll('.nav-links > li.dropdown-open').forEach(li => {
+        li.classList.remove('dropdown-open');
+      });
+      if (!wasOpen) {
+        parentLi.classList.add('dropdown-open');
+      }
+    });
+  });
+
+  document.addEventListener('click', (e) => {
+    const insideDropdown = e.target.closest('.nav-links > li.dropdown-open');
+    const insideToggle = e.target.closest('.nav-dropdown-toggle');
+    if (!insideDropdown && !insideToggle) {
+      document.querySelectorAll('.nav-links > li.dropdown-open').forEach(li => {
+        li.classList.remove('dropdown-open');
+      });
+    }
+  });
+
   document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
       menuToggle.classList.remove('active');
       navLinks.classList.remove('active');
+      document.querySelectorAll('.nav-links > li.dropdown-open').forEach(li => {
+        li.classList.remove('dropdown-open');
+      });
     });
   });
 
