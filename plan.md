@@ -221,6 +221,109 @@ Header Nav Links:
 
 ---
 
+## 📌 Progress Report — 2026-09-12 (Previous Session Work)
+
+### ✅ Work ALREADY COMPLETED (prior to today's active tasks)
+
+#### 1. Navbar — Tally & Company Products Dropdown
+**Status: ✅ DONE across all files**
+- New 3-section **"Tally & Company Products"** mega-dropdown added to the navbar
+- Logical grouping:
+  - **Tally Software & Editions** (6): TallyPrime Silver / Gold / Edit, Tally.ERP 9, Tally Server 9, Tally on Mobile
+  - **Modules & Cloud Services** (6): TallyIRA AI, Tally Drive, Bharat Connect, Browser Reports, Save View, Scheduled Backup
+  - **Invoicing, Banking & GST** (6): QR Code on Invoice, Logo & Signature, Printing Templates, GSTR 2A/2B Reconciliation, e-Invoice & e-Way Bill, Connected Banking
+- Desktop styling + mobile responsive styling already present in `css/style.css`
+- Mobile JS toggle (`.nav-dropdown-toggle` click handler at `innerWidth ≤ 720`) already present in `js/main.js#L26-L34`
+
+#### 2. WhatsApp "Get in Touch" CTA (Primary # +91 9254007440)
+**Status: ✅ 100% converted — 0 old `#contact` nav-cta remaining**
+- Main navbar **Get in Touch** → `https://wa.me/919254007440?text=Hello%20Sanyam%20Consultants%2C%20I%20would%20like%20to%20know%20more%20about%20your%20Tally%20services%20and%20solutions.%20Please%20assist%20me.`
+  - Applied to: `index.html` navbar, all 15 `/blogs/*.html` navbars, `blog.html` navbar
+- Other WhatsApp CTAs already applied:
+  - `index.html` Hero "Contact Us" → wa.me
+  - `index.html` CTA-banner "Schedule a Consultation" → wa.me (with schedule-message variant)
+  - `blog.html` CTA-banner "Contact Sanyam Consultants" → wa.me
+- **Global grep audit**: `nav-cta.*#contact` → 0 matches across entire project
+
+#### 3. Blog Listing (blog.html) Alignment Fix
+**Status: ✅ DONE — 15/15 cards consistent**
+- Cards 8–14 had malformed HTML (incorrect `blog-card-icon` wrappers, missing `</div>`, stray SVG, inconsistent structure)
+- All cards now use standard structure:
+  ```html
+  <article class="blog-card reveal">
+    <div class="blog-card-image">...</div>
+    <div class="blog-card-body">...</div>
+  </article>
+  ```
+- Global grep: `blog-card-icon` → **0 matches**
+- Triplet count: `blog-card-image` (15) + `blog-card-body` (15) + `</article>` (15) = **45 matches exact**
+
+#### 4. Blog Card / Featured Image CSS Standardization
+**Status: ✅ DONE**
+- `.blog-card-image` consistent aspect-ratio & presentation CSS added
+- `.post-featured-image` / `.post-featured-icon` CSS added for featured blog images
+- SVG fallback inside standardized container pattern established for cards without real JPG
+
+#### 5. Navbar Replacement across All 15 Blog Pages
+**Status: ✅ DONE — 15/15 verified**
+
+Task document listed 9 files as "remaining"; after grep audit only 6 actually needed the update (3 were already done pre-session):
+
+| Already had dropdown (pre-session) | Updated in last session |
+|---|---|
+| bank-statements-excel-to-tally.html | save-view.html |
+| bharat-connect.html | scheduled-backup.html |
+| connected-banking-axis-kotak-sbi-icici.html | tally-drive.html |
+| eway-bill-einvoice.html | tally-reports-in-browser.html |
+| gstr-2a-2b-reconciliation.html | tallyira.html |
+| ledger-from-gstin.html | tallyprime-7.1-release.html |
+| logo-signature-on-invoice.html ✅ | (Class rename: `post-featured-image` → `post-featured-icon` L197) |
+| printing-templates.html ✅ | |
+| qr-code-on-invoice.html ✅ | |
+
+Verification grep: `nav-dropdown-toggle` per `/blogs/` file → **15/15 files = exactly 1 match each** (0 duplicates, 0 zero-count)
+
+#### 6. Image Audit (all <img> tags, NO fabricated URLs)
+**Status: ✅ Audited; missing assets reported clearly (per Rule #13)**
+
+On-disk inventory: `images/blogs/` folder contains **23 JPG files** (catalogued).
+
+Every `<img src>` in `blog.html` + all 15 blogs cross-checked against actual directory listing.
+
+⚠️ **GENUINELY MISSING (not fabricated, NOT invented, REPORTED for user content team to supply JPGs):**
+1. `blogs/ledger-from-gstin.html` L195 & L201 — references `ledger-from-gstin-featured.jpg` + `ledger-from-gstin-hero.jpg` — **files missing on disk** (broken <img> if rendered today)
+2. `blog.html` Card 13 & Card 14 — `ledger-from-gstin-preview.jpg` + `connected-banking-*-preview.jpg` — no preview JPG on disk (currently SVG fallback inside standard `.blog-card-image` container — acceptable per spec, no broken <img>)
+3. `blogs/connected-banking-axis-kotak-sbi-icici.html` — SVG-only `.post-featured-icon`, no connected-banking-featured/hero.jpg
+4. `blogs/bank-statements-excel-to-tally.html` — SVG-only `.post-featured-icon`, no bank-statements-featured/hero.jpg
+5. Step screenshots absent (text-only, no <img>): bank-statements, connected-banking, tallyira (7 steps each)
+
+#### 7. Sitemap / Robots / Hard Constraints
+**Status: ✅ All verified**
+- `sitemap.xml`: 24/24 `<loc>` use `https://` protocol → **0 `http://`**
+- `robots.txt`: `Sitemap: https://www.sanyamconsultants.com/sitemap.xml` ✅
+- Project-memory hard constraints honored:
+  - Benefit grid class: `post-benefit` (no `-card` variant)
+  - Nav label: "Service Areas" standardized everywhere
+  - Blog interlinks in `/blogs/`: bare `filename.html` (no `../blogs/` prefix)
+  - Outer links from `/blogs/`: `../index.html#*` / `../blog.html`
+  - No AI placeholder images (`coresg-normal.trae.ai`) — 0 matches anywhere
+
+---
+
+## 📌 Work to do TODAY (2026-09-12 — Current Session)
+**User Request:**
+1. **"inn dono blogs ki images places add karo baaki blogs ki tarah"** → Add proper image placeholders/image sections to **2 specific blogs** (ledger-from-gstin + connected-banking) to match the structure/presentation of the other 13 blogs (proper wrappers, same layout pattern, SVG fallback or <img> fallback container consistent with baaki blogs)
+2. **"nav bar me tally products ko vertically listed karo jaise tallysolutions website me hai"** → Change Navbar "Tally & Company Products" dropdown from current 3-column mega-dropdown layout → **SINGLE-COLUMN VERTICAL layout** (like tallysolutions website) on desktop. Mobile already vertical → only desktop CSS needs changing.
+
+### 🎯 Today's Action Plan
+| # | Task | Details |
+|---|---|---|
+| A | Fix 2 blogs' image sections | `ledger-from-gstin.html` + `connected-banking-axis-kotak-sbi-icici.html` → featured/hero image wrappers consistent with reference template (`bharat-connect.html` L189-L194: `post-featured-icon` with img OR icon + caption, then `post-hero-banner` with preview/hero img inside correct wrapper/classes) |
+| B | Vertical Products dropdown | `style.css` L188-L198: change `.nav-dropdown-grid cols-3` default to `1fr` single-column (vertical list). Remove 3-column rule for desktop. Keep `.cols-3` / `.cols-1` overrides merged into single 1-col (all grids → 1 column vertical list). Adjust `.nav-dropdown` `min-width`/`max-width` for vertical look. |
+| C | Verification | Grep: image class counts (15/15 post-featured-icon), dropdown grid rule sanity, mobile still vertical unchanged, no duplicate <header> |
+
+---
+
 ## 📌 Notes & Assumptions
 - All blog content will be SEO-optimized (proper H1/H2/H3, meta tags)
 - Using **inline SVGs** only (no external image files) — keeps site fast & offline-capable
@@ -228,3 +331,4 @@ Header Nav Links:
 - All blog pages include the same footer with contact info & social links
 - Blog content written in **English** (professional, educational tone)
 - Page titles follow format: `[Topic] | Sanyam Consultants Blog — Hisar`
+- **Rule #13 enforced**: If image genuinely missing → REPORT clearly, NEVER invent/fabricate a URL
