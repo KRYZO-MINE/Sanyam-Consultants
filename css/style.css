@@ -74,7 +74,7 @@ header.scrolled {
   width: 44px;
   height: 44px;
   border-radius: 12px;
-  background: var(--primary);
+  background: #4F83CC;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -273,7 +273,7 @@ header.scrolled {
   margin: 4px 6px;
 }
 .nav-cta {
-  background:var(--primary);
+  background:linear-gradient(135deg,var(--primary),var(--primary-dark));
   color:#fff;
   padding:10px 22px;
   border-radius:50px;
@@ -408,7 +408,7 @@ header.scrolled {
   transition:var(--transition);
 }
 .btn-primary {
-  background:var(--primary);
+  background:linear-gradient(135deg,var(--primary),var(--primary-dark));
   color:#fff;
   box-shadow:0 10px 24px rgba(11,61,145,.3);
 }
@@ -660,7 +660,7 @@ section {
   left:0;
   right:0;
   height:4px;
-  background:var(--primary);
+  background:linear-gradient(90deg,var(--primary),var(--accent));
   transform:scaleX(0);
   transform-origin:left;
   transition:var(--transition);
@@ -720,7 +720,7 @@ section {
   width:72px;
   height:72px;
   border-radius:50%;
-  background:var(--primary);
+  background:linear-gradient(135deg,var(--primary),var(--accent));
   display:flex;
   align-items:center;
   justify-content:center;
@@ -764,7 +764,7 @@ section {
   width:56px;
   height:56px;
   border-radius:50%;
-  background:var(--primary);
+  background:linear-gradient(135deg,var(--primary),var(--accent));
   color:#fff;
   font-weight:800;
   font-size:1.4rem;
@@ -868,7 +868,7 @@ section {
   width:48px;
   height:48px;
   border-radius:50%;
-  background:var(--primary);
+  background:linear-gradient(135deg,var(--primary),var(--accent));
   display:flex;
   align-items:center;
   justify-content:center;
@@ -898,7 +898,7 @@ section {
   font-size:.85rem;
 }
 .areas {
-  background:#eef4ff;
+  background:linear-gradient(180deg,#eef4ff 0%,#f8fafc 100%);
 }
 .areas-grid {
   display:grid;
@@ -976,7 +976,7 @@ section {
   width:28px;
   height:28px;
   border-radius:50%;
-  background:rgba(11,61,145,.08);
+  background:linear-gradient(135deg,rgba(11,61,145,.1),rgba(16,185,129,.1));
   color:var(--primary);
   display:flex;
   align-items:center;
@@ -1070,7 +1070,7 @@ section {
   width:48px;
   height:48px;
   border-radius:12px;
-  background:rgba(11,61,145,.08);
+  background:linear-gradient(135deg,rgba(11,61,145,.1),rgba(16,185,129,.1));
   display:flex;
   align-items:center;
   justify-content:center;
@@ -1108,14 +1108,37 @@ section {
   display: block;
   padding: 20px;
   text-align: center;
-  background: #eef4ff;
-  color: var(--primary);
+  background: linear-gradient(
+  90deg,
+  #EA4335,
+  #FBBC05,
+  #34A853,
+  #4285F4,
+  #EA4335
+  );
+  background-size: 300% 100%;
+  background-position: 0% 50%;
+  animation: gradient-shift 5s ease-in-out infinite;
+  color: #fff;
   font-size: 30px;
   font-weight: 600;
+  -webkit-text-stroke: 1.2px #000;
+  text-shadow: none;
   overflow: hidden;
 }
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .map-link:hover {
-  background:#e3edfc;
+  opacity:.95;
 }
 footer {
   background:var(--dark);
@@ -1415,7 +1438,7 @@ footer {
   position:absolute;
   top:0; left:0; right:0;
   height: 4px;
-  background:var(--primary);
+  background: linear-gradient(90deg,var(--primary),var(--accent));
   transform: scaleX(0);
   transform-origin: left;
   transition: var(--transition);
@@ -1723,7 +1746,7 @@ footer {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background:var(--primary);
+  background: linear-gradient(135deg,var(--primary),var(--accent));
   color: #fff;
   font-weight: 700;
   font-size: 1.05rem;
@@ -1819,7 +1842,7 @@ footer {
 .post-faq-q span {
   width: 24px; height: 24px;
   border-radius: 50%;
-  background:rgba(11,61,145,.08);
+  background: linear-gradient(135deg,rgba(11,61,145,.1),rgba(16,185,129,.1));
   color: var(--primary);
   display: flex;
   align-items: center;
@@ -2028,10 +2051,10 @@ footer {
   color: #fff;
   box-shadow: 0 4px 12px rgba(0,0,0,.08);
 }
-.bank-axis { background:#c60b1e; }
-.bank-kotak { background:#e30613; }
-.bank-sbi { background:#004b8d; }
-.bank-icici { background:#b4371c; }
+.bank-axis { background: linear-gradient(135deg,#c60b1e,#8b0012); }
+.bank-kotak { background: linear-gradient(135deg,#e30613,#b20410); }
+.bank-sbi { background: linear-gradient(135deg,#004b8d,#003768); }
+.bank-icici { background: linear-gradient(135deg,#b4371c,#8e250f); }
 
 /* --- Responsive Blog --- */
 @media (max-width: 768px) {
