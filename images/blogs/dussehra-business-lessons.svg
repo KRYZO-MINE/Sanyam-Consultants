@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title description">
+  <title id="title">Dussehra 2026</title>
+  <desc id="description">A festive Dussehra greeting celebrating wisdom, integrity and new beginnings.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff5df"/>
+      <stop offset="1" stop-color="#f5d6a3"/>
+    </linearGradient>
+    <linearGradient id="flame" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#e85d24"/>
+      <stop offset="1" stop-color="#ffbd42"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#background)"/>
+  <circle cx="950" cy="270" r="185" fill="#fff9ec" opacity=".72"/>
+  <g fill="none" stroke="#c77a22" stroke-width="4" opacity=".55">
+    <path d="M840 430V220a110 110 0 0 1 220 0v210"/>
+    <path d="M875 430V230a75 75 0 0 1 150 0v200"/>
+    <path d="M910 430V240a40 40 0 0 1 80 0v190"/>
+  </g>
+  <g transform="translate(950 450)">
+    <path d="M-100 15h200l-22 42h-156z" fill="#b65e25"/>
+    <path d="M-92 8c35-36 149-36 184 0z" fill="#dc8130"/>
+    <path d="M0 3c-29-33 6-51 0-78 42 31 42 59 0 78z" fill="url(#flame)"/>
+    <path d="M-132 73h264" stroke="#a94e28" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <g fill="#bd6b2b" opacity=".7">
+    <circle cx="803" cy="190" r="5"/><circle cx="1090" cy="370" r="5"/>
+    <circle cx="1050" cy="145" r="4"/><circle cx="840" cy="370" r="4"/>
+  </g>
+  <text x="90" y="250" fill="#8f3c20" font-family="Georgia,serif" font-size="31" letter-spacing="5">HAPPY</text>
+  <text x="84" y="335" fill="#8f3c20" font-family="Georgia,serif" font-size="76" font-weight="700">DUSSEHRA</text>
+  <text x="90" y="389" fill="#59433a" font-family="Arial,sans-serif" font-size="26">A celebration of wisdom, integrity and new beginnings</text>
+  <text x="90" y="540" fill="#8f3c20" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="2">SANYAM CONSULTANTS</text>
+</svg>
