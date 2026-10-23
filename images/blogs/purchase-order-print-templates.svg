@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title description">
+  <title id="title">Purchase Order Print Templates</title>
+  <desc id="description">A professional purchase order document with organized item rows and approval details.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eaf2ff"/>
+      <stop offset="1" stop-color="#d7e6fb"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#background)"/>
+  <circle cx="935" cy="338" r="225" fill="#fff" opacity=".58"/>
+  <g transform="translate(805 110)">
+    <rect x="0" y="0" width="270" height="405" rx="18" fill="#fff" stroke="#174a91" stroke-width="8"/>
+    <path d="M36 55h118" stroke="#174a91" stroke-width="13" stroke-linecap="round"/>
+    <path d="M36 83h190" stroke="#b6c9df" stroke-width="8" stroke-linecap="round"/>
+    <rect x="35" y="116" width="200" height="42" rx="5" fill="#edf4fc"/>
+    <path d="M48 137h66M129 137h35M179 137h42" stroke="#7392b8" stroke-width="6" stroke-linecap="round"/>
+    <path d="M40 181h190M40 220h190M40 259h190M40 298h190" stroke="#d8e2ef" stroke-width="5"/>
+    <path d="M50 197h54M126 197h32M178 197h42M50 236h67M126 236h32M178 236h42M50 275h54M126 275h32M178 275h42" stroke="#9bb2ce" stroke-width="6" stroke-linecap="round"/>
+    <path d="M146 332h78" stroke="#174a91" stroke-width="8" stroke-linecap="round"/>
+    <path d="M50 365c22-21 35 15 57-4 15-13 27-8 38-1" fill="none" stroke="#198754" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="218" cy="58" r="24" fill="#198754"/>
+    <path d="m206 58 9 9 17-20" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g fill="#174a91" opacity=".12">
+    <circle cx="1090" cy="120" r="8"/><circle cx="745" cy="490" r="7"/>
+    <circle cx="1045" cy="550" r="6"/><circle cx="770" cy="190" r="6"/>
+  </g>
+  <text x="88" y="240" fill="#174a91" font-family="Arial,sans-serif" font-size="29" font-weight="700" letter-spacing="3">TALLYPRIME PRINTING</text>
+  <text x="82" y="330" fill="#123463" font-family="Arial,sans-serif" font-size="66" font-weight="800">PURCHASE ORDER</text>
+  <text x="90" y="385" fill="#455b78" font-family="Arial,sans-serif" font-size="27">Clear, professional templates for every order</text>
+  <text x="90" y="545" fill="#174a91" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="2">SANYAM CONSULTANTS</text>
+</svg>
