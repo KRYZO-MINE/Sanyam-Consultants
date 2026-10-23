@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title description">
+  <title id="title">Extended e-Invoice and e-Way Bill Login</title>
+  <desc id="description">A secure login screen and connected GST document workflow in TallyPrime.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eaf2ff"/>
+      <stop offset="1" stop-color="#d7e6fb"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#background)"/>
+  <circle cx="930" cy="330" r="220" fill="#fff" opacity=".58"/>
+  <g transform="translate(790 155)">
+    <rect x="0" y="0" width="285" height="355" rx="22" fill="#fff" stroke="#174a91" stroke-width="8"/>
+    <path d="M38 56h209" stroke="#d7e6fb" stroke-width="13" stroke-linecap="round"/>
+    <circle cx="142" cy="137" r="42" fill="#eaf2ff"/>
+    <circle cx="142" cy="126" r="14" fill="#174a91"/>
+    <path d="M113 164c4-22 54-22 58 0" fill="none" stroke="#174a91" stroke-width="9" stroke-linecap="round"/>
+    <rect x="52" y="209" width="181" height="20" rx="10" fill="#d7e6fb"/>
+    <rect x="52" y="247" width="181" height="20" rx="10" fill="#d7e6fb"/>
+    <rect x="52" y="291" width="181" height="38" rx="19" fill="#174a91"/>
+    <path d="m102 307 12 12 23-25" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="232" cy="68" r="25" fill="#198754"/>
+    <path d="m220 68 9 9 17-20" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g fill="#174a91" opacity=".12">
+    <circle cx="1090" cy="140" r="8"/><circle cx="741" cy="485" r="7"/>
+    <circle cx="1050" cy="535" r="6"/><circle cx="775" cy="205" r="6"/>
+  </g>
+  <text x="88" y="225" fill="#174a91" font-family="Arial,sans-serif" font-size="29" font-weight="700" letter-spacing="3">TALLYPRIME FEATURE</text>
+  <text x="82" y="320" fill="#123463" font-family="Arial,sans-serif" font-size="66" font-weight="800">EXTENDED LOGIN</text>
+  <text x="90" y="375" fill="#455b78" font-family="Arial,sans-serif" font-size="27">e-Invoice &amp; e-Way Bill</text>
+  <text x="90" y="545" fill="#174a91" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="2">SANYAM CONSULTANTS</text>
+</svg>
