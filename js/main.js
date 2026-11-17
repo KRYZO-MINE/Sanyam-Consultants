@@ -94,13 +94,40 @@ function initializePage() {
     const closeButton = upgradeOffer.querySelector('.offer-modal-close');
     const actionLink = upgradeOffer.querySelector('.offer-modal-action');
     const originalBodyOverflow = document.body.style.overflow;
+    const idleDelay = 30000;
+    let idleTimer;
     let previousFocus;
+    let offerHasBeenShown = false;
+
+    const showOffer = () => {
+      if (!upgradeOffer.hidden) return;
+      window.clearTimeout(idleTimer);
+      previousFocus = document.activeElement;
+      upgradeOffer.hidden = false;
+      document.body.style.overflow = 'hidden';
+      closeButton.focus();
+      offerHasBeenShown = true;
+    };
+
+    const scheduleIdleOffer = () => {
+      window.clearTimeout(idleTimer);
+      if (offerHasBeenShown && upgradeOffer.hidden) {
+        idleTimer = window.setTimeout(showOffer, idleDelay);
+      }
+    };
 
     const closeOffer = (restoreFocus) => {
       upgradeOffer.hidden = true;
       document.body.style.overflow = originalBodyOverflow;
       if (restoreFocus && previousFocus) previousFocus.focus();
+      scheduleIdleOffer();
     };
+
+    ['click', 'keydown', 'mousemove', 'mousedown', 'scroll', 'touchstart', 'wheel'].forEach((eventName) => {
+      window.addEventListener(eventName, () => {
+        if (upgradeOffer.hidden) scheduleIdleOffer();
+      }, { passive: true });
+    });
 
     closeButton.addEventListener('click', () => closeOffer(true));
     actionLink.addEventListener('click', () => closeOffer(false));
@@ -119,12 +146,7 @@ function initializePage() {
       }
     });
 
-    window.setTimeout(() => {
-      previousFocus = document.activeElement;
-      upgradeOffer.hidden = false;
-      document.body.style.overflow = 'hidden';
-      closeButton.focus();
-    }, 9000);
+    window.setTimeout(showOffer, 9000);
   }
 }
 

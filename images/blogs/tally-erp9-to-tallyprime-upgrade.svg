@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">Tally.ERP 9 to TallyPrime upgrade guide</title>
+  <desc id="description">A practical guide to checking eligibility, backing up company data, and planning a TallyPrime migration.</desc>
+  <rect width="1200" height="630" fill="#eef4ff"/>
+  <rect x="70" y="58" width="1060" height="514" rx="34" fill="#ffffff"/>
+  <text x="130" y="158" fill="#0b3d91" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" letter-spacing="3">UPGRADE GUIDE</text>
+  <text x="130" y="246" fill="#0f172a" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700">Tally.ERP 9</text>
+  <text x="130" y="310" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="29">Legacy accounting software</text>
+  <path d="M518 260h155m-38-38 38 38-38 38" fill="none" stroke="#10b981" stroke-linecap="round" stroke-linejoin="round" stroke-width="14"/>
+  <rect x="738" y="190" width="320" height="152" rx="24" fill="#0b3d91"/>
+  <text x="898" y="278" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="43" font-weight="700" text-anchor="middle">TallyPrime</text>
+  <text x="130" y="438" fill="#0f172a" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700">Plan the move. Protect your data.</text>
+  <text x="130" y="492" fill="#475569" font-family="Arial, Helvetica, sans-serif" font-size="25">Eligibility • Backup • Migration • Verification</text>
+</svg>
