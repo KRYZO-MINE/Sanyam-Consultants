@@ -8,6 +8,7 @@ Official single-page website for Sanyam Consultants, a Tally Certified 3-Star sa
 - Tally sales, implementation, training, support, AMC, and consulting content
 - Mobile navigation menu
 - FAQ accordion
+- Homepage TallyPrime upgrade offer popup after 9 seconds, with a support link and dismiss control
 - Scroll reveal animations
 - Contact details, phone links, email link, Google Maps embed, and social links
 - SEO metadata, Open Graph metadata, Twitter metadata, and JSON-LD structured data

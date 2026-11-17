@@ -88,6 +88,44 @@ function initializePage() {
   document.querySelectorAll('.services-grid .reveal, .why-grid .reveal, .areas-grid .reveal, .faq-list .reveal, .process-grid .reveal, .industries-grid .reveal, .testimonials-grid .reveal').forEach((el, i) => {
     el.style.transitionDelay = (i * 0.08) + 's';
   });
+
+  const upgradeOffer = document.getElementById('upgradeOffer');
+  if (upgradeOffer) {
+    const closeButton = upgradeOffer.querySelector('.offer-modal-close');
+    const actionLink = upgradeOffer.querySelector('.offer-modal-action');
+    const originalBodyOverflow = document.body.style.overflow;
+    let previousFocus;
+
+    const closeOffer = (restoreFocus) => {
+      upgradeOffer.hidden = true;
+      document.body.style.overflow = originalBodyOverflow;
+      if (restoreFocus && previousFocus) previousFocus.focus();
+    };
+
+    closeButton.addEventListener('click', () => closeOffer(true));
+    actionLink.addEventListener('click', () => closeOffer(false));
+    upgradeOffer.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        closeOffer(true);
+      } else if (event.key === 'Tab') {
+        const activeElement = document.activeElement;
+        if (event.shiftKey && activeElement === closeButton) {
+          event.preventDefault();
+          actionLink.focus();
+        } else if (!event.shiftKey && activeElement === actionLink) {
+          event.preventDefault();
+          closeButton.focus();
+        }
+      }
+    });
+
+    window.setTimeout(() => {
+      previousFocus = document.activeElement;
+      upgradeOffer.hidden = false;
+      document.body.style.overflow = 'hidden';
+      closeButton.focus();
+    }, 9000);
+  }
 }
 
 initializePage();

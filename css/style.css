@@ -720,7 +720,7 @@ section {
   width:72px;
   height:72px;
   border-radius:50%;
-  background:linear-gradient(135deg,var(--primary),var(--accent));
+  background:var(--primary);
   display:flex;
   align-items:center;
   justify-content:center;
@@ -764,7 +764,7 @@ section {
   width:56px;
   height:56px;
   border-radius:50%;
-  background:linear-gradient(135deg,var(--primary),var(--accent));
+  background:var(--primary);
   color:#fff;
   font-weight:800;
   font-size:1.4rem;
@@ -2055,6 +2055,83 @@ footer {
 .bank-kotak { background: linear-gradient(135deg,#e30613,#b20410); }
 .bank-sbi { background: linear-gradient(135deg,#004b8d,#003768); }
 .bank-icici { background: linear-gradient(135deg,#b4371c,#8e250f); }
+
+/* --- Timed TallyPrime upgrade offer --- */
+.offer-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(15, 23, 42, .72);
+}
+.offer-modal[hidden] {
+  display: none;
+}
+.offer-modal-content {
+  position: relative;
+  width: min(900px, 100%);
+  max-height: calc(100vh - 40px);
+  overflow: auto;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, .35);
+}
+.offer-modal-content img {
+  width: 100%;
+  height: auto;
+}
+.offer-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(15, 23, 42, .8);
+  color: #fff;
+  font-size: 30px;
+  line-height: 1;
+  cursor: pointer;
+}
+.offer-modal-actions {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+}
+.offer-modal-action,
+.offer-modal-learn-more {
+  flex: 1;
+  display: block;
+  padding: 14px 20px;
+  border: 1px solid var(--primary);
+  border-radius: 6px;
+  font-weight: 700;
+  text-align: center;
+}
+.offer-modal-action {
+  background: var(--primary);
+  color: #fff;
+}
+.offer-modal-action:hover {
+  background: var(--primary-dark);
+}
+.offer-modal-learn-more {
+  color: var(--primary);
+}
+.offer-modal-learn-more:hover {
+  background: rgba(11, 61, 145, .06);
+}
+@media (max-width: 480px) {
+  .offer-modal-actions {
+    flex-direction: column;
+  }
+}
 
 /* --- Responsive Blog --- */
 @media (max-width: 768px) {
