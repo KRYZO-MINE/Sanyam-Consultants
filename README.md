@@ -13,6 +13,9 @@ Official single-page website for Sanyam Consultants, a Tally Certified 3-Star sa
 - Contact details, phone links, email link, Google Maps embed, and social links
 - SEO metadata, Open Graph metadata, Twitter metadata, and JSON-LD structured data
 - External PNG favicon
+- Lead-generation enquiry forms with Indian mobile validation and pre-filled WhatsApp delivery
+- TallyPrime, TallyDrive and TallyIra dedicated product landing pages
+- Floating product-aware WhatsApp contact and conversion tracking hooks
 
 ## Project Structure
 

@@ -148,6 +148,125 @@ function initializePage() {
 
     window.setTimeout(showOffer, 9000);
   }
+
+  const trackEvent = (name, params = {}) => {
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', name, params);
+    }
+  };
+
+  document.querySelectorAll('[data-product]').forEach(link => {
+    link.addEventListener('click', () => {
+      const select = document.getElementById('leadInterest');
+      if (select) select.value = link.dataset.product;
+      trackEvent('contact_form_started', { interest: link.dataset.product });
+    });
+  });
+
+  document.querySelectorAll('[data-whatsapp-message], .floating-whatsapp').forEach(link => {
+    link.addEventListener('click', () => {
+      trackEvent('whatsapp_button_clicked', { message: link.dataset.whatsappMessage || 'general' });
+    });
+  });
+
+  document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+    link.addEventListener('click', () => trackEvent('phone_number_clicked'));
+  });
+
+  const leadForm = document.getElementById('leadForm');
+  if (leadForm) {
+    let formStarted = false;
+    leadForm.addEventListener('focusin', () => {
+      if (!formStarted) {
+        formStarted = true;
+        trackEvent('contact_form_started');
+      }
+    });
+
+    leadForm.addEventListener('input', () => {
+      leadForm.querySelectorAll('.field-error').forEach(field => field.classList.remove('field-error'));
+      const status = document.getElementById('leadStatus');
+      if (status) status.textContent = '';
+    });
+
+    leadForm.addEventListener('submit', async event => {
+      event.preventDefault();
+      const status = document.getElementById('leadStatus');
+      const submitButton = leadForm.querySelector('.lead-submit');
+      leadForm.querySelectorAll('.field-error').forEach(field => field.classList.remove('field-error'));
+
+      const fields = Object.fromEntries(new FormData(leadForm).entries());
+      if (fields.website) return;
+
+      const requiredFields = ['customerName', 'phone', 'businessName', 'city', 'interest'];
+      let invalid = false;
+      requiredFields.forEach(name => {
+        const field = leadForm.elements[name];
+        if (!field || !field.value.trim()) {
+          field && field.classList.add('field-error');
+          invalid = true;
+        }
+      });
+
+      const phoneDigits = fields.phone.replace(/\D/g, '');
+      if (!/^(?:91)?[6-9]\d{9}$/.test(phoneDigits)) {
+        leadForm.elements.phone.classList.add('field-error');
+        invalid = true;
+      }
+
+      if (!leadForm.checkValidity()) invalid = true;
+
+      if (invalid) {
+        status.className = 'form-status error';
+        status.textContent = 'Please enter valid details in the highlighted fields.';
+        return;
+      }
+
+      const params = new URLSearchParams(window.location.search);
+      const payload = {
+        leadId: 'lead_' + Date.now(),
+        customerName: fields.customerName.trim(),
+        phoneNumber: phoneDigits,
+        businessName: fields.businessName.trim(),
+        city: fields.city.trim(),
+        interestedProduct: fields.interest,
+        email: (fields.email || '').trim(),
+        message: (fields.message || '').trim(),
+        submissionDateTime: new Date().toISOString(),
+        landingPageUrl: window.location.href,
+        leadSource: 'Website',
+        campaignName: params.get('campaign') || '',
+        utmSource: params.get('utm_source') || '',
+        utmMedium: params.get('utm_medium') || '',
+        utmCampaign: params.get('utm_campaign') || ''
+      };
+
+      const messageLines = [
+        `Hello Sanyam Consultants, My Name is ${payload.customerName} and my business name is ${payload.businessName}. I want to learn more about ${payload.interestedProduct}.`
+      ];
+      if (payload.message) messageLines.push(payload.message);
+      messageLines.push(payload.phoneNumber);
+      if (payload.email) messageLines.push(payload.email);
+
+      const whatsappUrl = 'https://wa.me/917206767999?text=' + encodeURIComponent(messageLines.join('\n'));
+      submitButton.disabled = true;
+      submitButton.textContent = 'Opening WhatsApp...';
+      status.className = 'form-status success';
+      status.textContent = 'Your enquiry details are ready. WhatsApp is opening; please press Send in WhatsApp.';
+      trackEvent('enquiry_form_submitted', { interested_product: payload.interestedProduct, delivery: 'whatsapp' });
+
+      const whatsappWindow = window.open(whatsappUrl, '_blank');
+      if (!whatsappWindow) {
+        window.location.href = whatsappUrl;
+      } else if ('opener' in whatsappWindow) {
+        whatsappWindow.opener = null;
+      }
+
+      leadForm.reset();
+      submitButton.disabled = false;
+      submitButton.textContent = 'Submit Enquiry';
+    });
+  }
 }
 
 initializePage();
