@@ -1394,6 +1394,18 @@ footer {
   font-size:.85rem;
   color:#94a3b8;
 }
+.footer-bottom a[href="https://www.kryzo.space"] {
+  color:#c4b5fd;
+  text-decoration:underline;
+  text-decoration-color:#a78bfa;
+  text-underline-offset:3px;
+  text-shadow:0 0 8px rgba(167,139,250,.7);
+  transition:color .2s ease, text-shadow .2s ease;
+}
+.footer-bottom a[href="https://www.kryzo.space"]:hover {
+  color:#fff;
+  text-shadow:0 0 10px #a78bfa, 0 0 18px rgba(167,139,250,.8);
+}
 .reveal {
   opacity:0;
   transform:translateY(30px);
